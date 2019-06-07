@@ -170,3 +170,7 @@
   * Add `brod:fold/8`. This API spawns a process to fetch-ahead while folding the previously
     fetched batch. `brod-cli`'s `fetch` command is updated to call this `fold` API for better
     performance.
+  * Support scram SASL authentication in brod-cli
+  * Made possible to start-link or supervise `brod_consumer` in user apps, instead of always
+    under `brod_client`'s `brod_consumers_sup`
+
